@@ -1,0 +1,55 @@
+;=
+;===================================
+;
+;  https://github.com/jaagr/polybar
+;
+;====================================
+
+[colors]
+background = ${xrdb:color0:#222}
+background-alt = ${xrdb:color3:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color2:#555}
+highlight = ${xrdb:color2:#f00}
+urgent = #f00
+
+[bar/main]
+;width = 100%
+height = 35
+;offset-x = 1%
+offset-y = 0%
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+border-left-size = 0
+border-size = 0
+border-color = #00000000
+
+padding-left = 1
+padding-right = 2
+padding-top = 2
+padding-bottom = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+;modules-left = 
+modules-center = date
+;module-right =
+
+[module/date]
+type = internal/date
+interval = 1
+
+format-prefix-foreground = ${colors.foreground-alt}
+format-foreground = ${colors.foreground}
+
+date = "%Y/%m/%d | "
+time = "%I:%M %p"
+label = " %date%%time% "  
