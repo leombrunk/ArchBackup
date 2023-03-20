@@ -1,2 +1,2 @@
 # ArchBackup
-Backup dotfiles and install packages
+Backup dotfiles and settings

@@ -1,0 +1,2 @@
+# Save all yt-dl files to the Music directory
+-o ~/Music/%(title)s.%(ext)s

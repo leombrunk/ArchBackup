@@ -1,0 +1,119 @@
+.# Python tips
+pyenv versions
+pyenv <shell/local/global> <version>
+
+# Git tips
+repo level .git/config
+[user]
+        email = myemail
+        name = myusername
+
+# Interactive terminal commands
+bottom:			Activity monitor
+cava:			Audio visualizer
+ranger:			File manager
+neofetch:		System info			.config/neofetch/config.conf
+iftop:			Network monitor			.iftoprc
+feh:			Image viewer
+vim:			Text editor
+nano:			Text editor
+cbonsai:		Virtual bonsai
+yt-dlp:			Youtube downloader		.yt-dlp/config
+aws-cli-v2:		Aws				.aws/config
+sam:			Aws sam
+mpv:			Media player
+arandr:			Monitor control			.screenlayout
+
+# UI
+polybar			Task bar			.config/polybar/config.ini			
+dunst:			Notifications			.config/dunst/dunstrc
+redshift:		Screen dimmer			.config/redshift.conf
+rofi:			Task launcher			.config/rofi/config.rasi
+python-pywal:		Themer
+python-wal-steam-git:	Steam themer
+imagemagick:		Image handler
+pavucontrol:		Audio manager for pulseaudio
+unclutter:		Mouse hider
+gnome-screenshot:	Screenshot
+
+# System
+pipewire:		Audio manager
+pipewire-pulse:		Audio manager
+networkmanager:		Network manager
+i3-wm:			Window manager			.config/i3/config
+perl-json-xs:		Perl json
+perl-anyevent-i3:	Perl i3
+mesa:			Video driver
+xf86-video-amdgpu:	Video driver
+yay:			Package manager
+xorg:			Display server			.Xresources
+xorg-xinit:		Display server starter		.xinitrc
+kitty:			Terminal			.config/kitty/kitty.conf
+reflector:		Mirror manager
+brightnessctl:		Screen manager
+time:			Time software
+postgresql:		SQL driver
+gnome-keyring:		Key manager
+curl:			Requests
+git:			Source control
+bluez:			Bluetooth manager
+bluez-utils:		Bluetooth manager utils
+noto-fonts-cjk:		Font chinese, japanese, korean
+noto-fonts-emoji:	Font emojis
+noto-fonts:		Font
+unzip:			Extractor
+xrandr:			Monitor
+jq:			Json parser
+tk:			Windowing toolkit
+pyenv:			Python version manager
+
+# Software
+visual-studio-code-bin:	IDE
+google-chrome:		Internet browser
+firefox:		Internet browser
+dbeaver:		SQL client
+steam:			Game library
+
+# Running processes
+chrome			Chrome
+code			Code
+firefox			Firefox
+Web Content		Firefox
+WebExtensions		Firefox
+Socket Process		Firefox
+python			Firefox pywal
+kitty			Terminal
+Xorg			Display manager
+wireplumber		Pipewire
+pipewire-pulse		Pipewire
+NetworkManager		NetworkManager
+gnome-keyring-daemon	Keyring
+cbonsai			Cbonsai			25Mb RAM	.1% CPU
+systemd			Systemd			23Mb RAM	 0% CPU
+bash			Bash			22Mb RAM	 0% CPU
+pipewire		Pipewire		21Mb RAM	 0% CPU
+dunst			Notifications		21Mb RAM	 0% CPU
+polybar			Bar			20Mb RAM	 0% CPU
+i3			Window Manager		18Mb RAM	 0% CPU
+systemd-jounald		Systemd journal		15Mb RAM	 0% CPU
+cava			Cava			15Mb RAM	.1% CPU
+dbus-daemon					13Mb RAM	 0% CPU
+wpa_supplicant					11Mb RAM	 0% CPU
+polkitd						11Mb RAM	 0% CPU
+systemd-udevd					 9Mb RAM	 0% CPU
+btm			Task manager		 8Mb RAM	.1% CPU
+systemd-logind
+at-spi2-registryd
+at-spi-bus-launcher
+chrome_crashpad_handler	Chrome
+bluetoothd
+redshift
+login
+(sd-pam)
+nacl_helper
+startx
+.xinitrc
+nano
+rtkit-daemon
+cat
+xinit
