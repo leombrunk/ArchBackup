@@ -23,6 +23,7 @@ aws-cli-v2:		Aws				.aws/config
 sam:			Aws sam
 mpv:			Media player
 arandr:			Monitor control			.screenlayout
+seahorse		Gnome keyring UI		.local/share/keyrings
 
 # UI
 polybar			Task bar			.config/polybar/config.ini			
