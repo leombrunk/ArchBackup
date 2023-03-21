@@ -15,7 +15,7 @@ mkdir -p .screenlayout
 mkdir -p Documents
 mkdir -p Pictures/Wallpaper
 
-cp $HOME/Pictures/Wallpaper/ ./Pictures/Wallpaper/
+cp $HOME/Pictures/Wallpaper/Wallpaper.jpg ./Pictures/Wallpaper/
 
 # Copy dot files
 cp $HOME/{.bashrc,.fehbg,.vimrc,.xinitrc} .
