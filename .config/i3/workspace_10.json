@@ -1,5 +1,5 @@
 {
-    "border": "pixel",
+    "border": "normal",
     "floating": "auto_off",
     "layout": "tabbed",
     "marks": [],
@@ -7,12 +7,12 @@
     "type": "con",
     "nodes": [
         {
-            "border": "pixel",
-            "current_border_width": 1,
+            "border": "normal",
+            "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 984,
-               "width": 1878,
+               "height": 983,
+               "width": 1876,
                "x": 0,
                "y": 0
             },
@@ -55,24 +55,24 @@
             "type": "con"
         },
         {
-            "border": "pixel",
-            "current_border_width": 1,
+            "border": "normal",
+            "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 984,
-               "width": 1878,
-               "x": 21,
+               "height": 983,
+               "width": 1876,
+               "x": 22,
                "y": 75
             },
             "marks": [],
-            "name": "Visual Studio Code",
+            "name": "Code - OSS",
             "percent": 0.333333333333333,
             "swallows": [
                {
-               "class": "^Code$",
-               "instance": "^code$",
+               "class": "^code\\-oss$",
+               "instance": "^code\\-oss$",
                "machine": "^archken$",
-               "title": "^Visual\\ Studio\\ Code$",
+               "title": "^Code\\ \\-\\ OSS$",
                "window_role": "^browser\\-window$"
                }
             ],

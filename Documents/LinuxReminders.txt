@@ -1,4 +1,14 @@
-.# Python tips
+# Audio tips
+# GUI audio
+pavucontrol
+# List output sinks aka audio outputs
+pactl list short sinks
+# List sink inputs aka audio sources
+pactl list short sink-inputs
+# Move an audio source to an output
+pactl move-sink-input <leftmost sink-input number> <leftmost sink number>
+
+# Python tips
 pyenv versions
 pyenv <shell/local/global> <version>
 
@@ -26,7 +36,7 @@ arandr:			Monitor control			.screenlayout
 seahorse		Gnome keyring UI		.local/share/keyrings
 
 # UI
-polybar			Task bar			.config/polybar/config.ini			
+polybar			Task bar			.config/polybar/config.ini	
 dunst:			Notifications			.config/dunst/dunstrc
 redshift:		Screen dimmer			.config/redshift.conf
 rofi:			Task launcher			.config/rofi/config.rasi
@@ -69,7 +79,8 @@ tk:			Windowing toolkit
 pyenv:			Python version manager
 
 # Software
-visual-studio-code-bin:	IDE
+obs-studio		Video capture
+code:			IDE
 google-chrome:		Internet browser
 firefox:		Internet browser
 dbeaver:		SQL client

@@ -16,8 +16,19 @@ highlight=$color4
 
 # Set env for all monitors and launch
 if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload main &
+  PRIMARY=$(xrandr --query | grep "primary" | cut -d" " -f1)
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do 
+    POSITION=$(xrandr --query | grep $m | awk -v FS="(+|+)" '{print $2}') 
+    if [[ $POSITION != 0 ]] && [[ $m != $PRIMARY ]]
+    then
+      echo "Set polybar on non 0 non primary monitor $m"
+      MONITOR=$m polybar --reload main &
+    fi
+    if [[ $PRIMARY == $m ]]
+    then
+      echo "Set polybar on primary monitor $m"
+      MONITOR=$m polybar --reload main &
+    fi
   done
 else
   polybar --reload main &
