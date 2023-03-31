@@ -1,3 +1,21 @@
+# Change mouse settings
+xinput --list --short
+xinput --list-props 17
+xinput set-prop '17' 'libinput Accel Speed' -.7
+sudo vim /etc/X11/xorg.conf.d/libinput.conf
+
+# Privacy settings
+about:preferences -> General -> Network settings -> Settings -> enable DNS over HTTPS
+about:preferences -> Privacy and Security -> Strict
+about:preferences -> Privacy and Security -> Send websites a Do Not Track signal -> always
+about:preferences -> Firefox Data Collection and Use -> Off
+about:preferences -> Search -> Disable show search suggestions in address bar
+about:preferences -> Privacy and Security -> Suggestions from sponsors/web/improve firefox suggest
+
+# Wifi randomly stops
+rfkill unblock 1
+nmcli radio wifi on
+
 # Audio tips
 # GUI audio
 pavucontrol
@@ -11,6 +29,8 @@ pactl move-sink-input <leftmost sink-input number> <leftmost sink number>
 # Python tips
 pyenv versions
 pyenv <shell/local/global> <version>
+python3 -m venv venv
+source venv/bin/activate
 
 # Git tips
 repo level .git/config
